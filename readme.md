@@ -6,4 +6,5 @@ y hacerles el correspondiente seguimiento.
 #Integrantes
 
 Natalia Barrera, edad 27 años
+
 Leonardo Molina, edad 21 años
