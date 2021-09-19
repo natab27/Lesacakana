@@ -7,8 +7,7 @@ y hacerles el correspondiente seguimiento.
 
 Natalia Barrera, edad 27 años
 
-
 Carolina Rojas, edad 24 años
 
-
+Leonardo Molina, 21 años 
 
