@@ -11,3 +11,5 @@ Carolina Rojas, edad 24 años
 
 Leonardo Molina, 21 años 
 
+Carlos Henao, 42 años 
+
