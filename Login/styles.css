@@ -1,0 +1,49 @@
+body{
+    background-color: lavender;
+    border-style: solid;
+    border-width: 2px;
+    border-color:lavenderblush;
+    border-collapse: 20px;
+}
+.nav {
+    display: inline-block;
+
+}
+.titulo {    
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+.buttons button {
+    display:block;
+    margin:auto;
+    background-color: #3D3661;
+    color: white;
+    padding: 10px 15px;
+    margin: 6px 0;
+}
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  h6 {
+    font-family: 'Helvetica';
+    font-size: '4rem';
+    color: grey;
+    text-align: center;
+
+}
+.avatar {
+    display:block;
+    margin:auto;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  div.center {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
