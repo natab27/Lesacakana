@@ -4,33 +4,38 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="./css/styles.css" rel="stylesheet"/>
         <title>Lesacakana - Registrar Usuario</title>
     </head>
     <body>
         <header>
-            <img src="./img/logo-lesacakana.png" alt="Logo Lesacakana"/>
+            <img class="img" src="./img/logo-lesacakana.png" alt="Logo Lesacakana"/>
         </header>
         <main>
             <h1>Registrar Usuario</h1>
-            <a href="./registrar_usuario.html">Link</a>
-            <form>
+            <a href="./registrar_usuario.html">Modificar Usuario</a>
+            <br/> <br/>
+            <form class="formulario">
                 <label for="codigo">
                     Código
-                    <input placeholder="Ingrese el código" type="number"/>
+                    <input class="input" placeholder="Ingrese el código" type="number"/>
                 </label>
+                <br/>
                 <label for="nombre">
                     Nombre
-                    <input placeholder="Ingrese el nombre" type="text"/>
+                    <input class="input" placeholder="Ingrese el nombre" type="text"/>
                 </label>
+                <br/>
                 <label for="rol">
                     Rol
-                    <select name="rol">
+                    <select class="input" name="rol">
                         <option>Administrador</option>
                         <option>Vendedor</option>
                     </select>
                 </label>
-                <button type="submit">Agregar</button>
-                <button type="reset">Limpiar</button>                
+                <br/><br/>
+                <button class="button" type="submit">Agregar</button>
+                <button class="button" type="reset">Limpiar</button>                
             </form>
         </main>
         <footer></footer>      

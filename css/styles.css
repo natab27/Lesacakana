@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(230, 241, 242);
+    border-style: solid;
+    border-width: 2px;
+    border-color:lavenderblush;
+    border-collapse: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+.formulario{
+    font: bolder;
+}
+.img{
+    width: 10%;
+}
+.button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    color: white;
+    background-color: rgb(76, 96, 115);
+
+}
+.input{
+    font-size: medium;
+}
