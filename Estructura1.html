@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <link href="Formato1.css" rel="stylesheet">
+    
+<body>
+
+<header>
+    <img class="img" src="./Imagen/Logo Lskna.png" alt="Logo Lskna"/>
+</header><br>
+
+
+<h1>Nueva Venta</h1>
+
+<form>
+    <div>
+        <label for="fname">Fecha</label>
+        <input type="date" id="fdate" name="fdate" placeholder=""><br><br>
+
+        <label for="fname">Hora</label>
+        <input type="time" id="ftime" name="ftime" placeholder=""><br><br>
+
+        <label for="fname">Cliente</label>
+        <select>
+            <option>001</option>
+            <option>002</option>
+            <option>003</option>
+            <option>004</option>
+            <option>005</option>
+        </select>
+        
+        <input type="text" id="fname" name="fname" placeholder="Nombre del Cliente"><br><br>
+
+        <label for="fname">Producto</label>
+        <input type="text" id="fname" name="fname" placeholder="Nombre del Producto"><br><br>
+
+        <label for="inlineFormSelectPref">Cantidad</label>
+        <select class="form-select" id="inlineFormSelectPref">
+            <option selected>Seleccionar...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <br><br>
+
+        <label for="fname">Valor Unitario</label>
+        <input type="number" id='myNumber' value="40,000" step='100'><br><br>
+
+        <label for="fname">Subtotal</label>
+        <input type="number" id='myNumber' value="40,000" step='100'><br><br>
+
+        <label for="fname">Total</label>
+        <input type="number" id='myNumber' value="40,000" step='100'><br><br>
+
+        <label for="fname">Estado de la Venta</label>
+        <select>
+            <option>En proceso</option>
+            <option>Cancelada</option>
+            <option>Entregada</option>
+            
+        </select>
+        <br><br>
+
+        <label for="fname">Encargado</label>
+        <select>
+            <option>Vendedor</option>
+            <option>Administrador</option>
+         </select>
+        <br><br>
+    </div>
+
+    <button type="button">
+        Registrar Documento
+    </button>
+  
+</form>
+
+</body>
+</html>

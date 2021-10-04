@@ -1,0 +1,29 @@
+
+html {
+    font-family: "Helvetica";
+    font-size: 18px;
+}
+
+.img{
+  width: 20%;
+}
+
+h1 {
+    font-family: "Helvetica";
+    font-size: 2rem;
+    color: rgb(4, 44, 83);
+}
+
+button {
+    background-color: #3D3661;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+  }
+  
+  button:hover {
+    background-color: #3D3661;
+  }
