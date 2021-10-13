@@ -1,0 +1,161 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <script src="Interfaz_maestroProd.js"></script>
+
+      <style>
+
+          body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+          }
+          
+          * {
+            box-sizing: border-box;
+          }
+          
+          .container {
+            padding: 16px;
+            background-color: white;
+          }
+          
+          input[type=text], input[type=text] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+          }
+          
+          input[type=text]:focus, input[type=text]:focus {
+            background-color: #ddd;
+            outline: none;
+          }
+          
+          hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+          }
+          
+          .registerbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+          }
+          
+          .registerbtn:hover {
+            opacity: 1;
+          }
+          
+          a {
+            color: dodgerblue;
+          }
+          
+          .signin {
+            background-color: #f1f1f1;
+            text-align: center;
+          }
+          </style>
+          </head>
+  </head>
+  <body>
+
+      <div class="container">
+          <h1>Información de los productos</h1>
+          <p>Bienvenido a la interfaz del maestro de productos.</p>
+          <p>Para encontrar los productos por favor ingrese la información que identifica al producto.</p>
+
+          <label for="Identificador del producto"><b>Identificador del producto</b></label>
+          <input type="text" placeholder="Inserte el Identificador" name="Identificador del producto"
+          id="Identificador del producto" required>
+          
+          <p>De acuerdo con el identificador, el producto es:</p>
+
+          <label for="Producto"><b>Producto</b></label>
+          <input type="text" placeholder="Producto" name="Producto" id="Producto" required>
+
+          <p>¿Desea modificar algún valor del producto?</p>
+
+          <select>
+            <option selected value="0"> Elige una opción </option>
+                <option value="1">Sí</option> 
+                <option value="2">No</option> 
+        </select>
+
+        <p>Por favor rellene los siguientes espacios para modificar valores del producto</p>
+      <hr>
+
+      <label for="Descripci&oacuten del producto"><b>Descripci&oacuten del producto</b></label>
+      <input type="text" placeholder="Descripcion del producto" name="Descripcion del producto" 
+      id="Descripci&oacuten del producto" required>
+
+      <label for="Identificador del producto"><b>Identificador del producto</b></label>
+      <input type="text" placeholder="Inserte el Identificador" name="Identificador del producto"
+      id="Identificador del producto" required>
+
+      <label for="Valor Unitario"><b>Valor Unitario</b></label>
+      <input type="Value" placeholder="Inserte el Valor" name="Valor Unitario" id="Valor Unitario" required>
+
+      <label for="Estado del producto"><b>Estado del producto</b></label>
+    <select>
+        <option required selected value="0"> Elige una opción </option>
+            <option id="Disponibilidad" value="Disponible">Disponible</option> 
+            <option id="No Disponibilidad" value="No Disponible">No Disponible</option> 
+    </select>
+    
+      <hr>
+
+      <button type="reset" class="registerbtn" onclick="registrar();">Registrar</button>
+      
+      </div>
+      <div id="resultados" class="container">
+        <p> Los productos que se han modificado son:</p>
+        <table class="table" id="tabla">
+            <tr>
+              <th>Descripción</th>
+              <th>Identificador</th>
+              <th>Valor Unitario</th>
+              <th>Estado</th>
+            </tr>
+        </table>
+      </div>  
+    
+    <script>
+      
+      function registrar(){
+        function producto(des,iden,val,est){
+          this.des=des;
+          this.iden=iden;
+          this.val=val;
+          this.est=est;
+        }
+    
+        var desRegistrar=document.getElementById("Descripci&oacuten del producto").value;
+        var idenRegistrar=document.getElementById("Identificador del producto").value;
+        var valRegistrar=document.getElementById("Valor Unitario").value;
+        var estRegistrar=document.getElementById("Disponibilidad").value;
+    
+        nuevoProducto=new producto(desRegistrar,idenRegistrar,valRegistrar,estRegistrar);
+        agregarProducto();
+      }
+    
+      var baseDatos=[];
+      function agregarProducto(){
+        baseDatos.push(nuevoProducto);
+        document.getElementById("tabla").innerHTML+='<tbody><td>'+nuevoProducto.des+'</td><td>'
+          +nuevoProducto.iden+'</td><td>'+nuevoProducto.val+'</td><td>'+nuevoProducto.est+'</td></tbody>';
+      }
+    
+    </script>
+  </body>
+  </html>
