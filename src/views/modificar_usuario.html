@@ -4,37 +4,26 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" type="image/x-icon" href="./img/favicon.jpg"/>
         <link href="./css/styles.css" rel="stylesheet"/>
-        <title>Lesacakana - Registrar Usuario</title>
+        <%- include ('./css/styles.css')%>
+        <title>Lesacakana - Modificar Usuario</title>
     </head>
     <body>
         <header>
             <img class="img" src="./img/logo-lesacakana.png" alt="Logo Lesacakana"/>
         </header>
         <main>
-            <h1>Registrar Usuario</h1>
-            <a href="./modificar_usuario.html">Modificar Usuario</a>
+            <h1>Modificar Usuario</h1>
+            <a href="./registrar_usuario">Registrar Usuario</a>
             <br/> <br/>
             <form class="formulario">
                 <label for="codigo">
-                    Código
+                    Ingrese el código que desea modificar
                     <input class="input" placeholder="Ingrese el código" type="number"/>
                 </label>
-                <br/>
-                <label for="nombre">
-                    Nombre
-                    <input class="input" placeholder="Ingrese el nombre" type="text"/>
-                </label>
-                <br/>
-                <label for="rol">
-                    Rol
-                    <select class="input" name="rol">
-                        <option>Administrador</option>
-                        <option>Vendedor</option>
-                    </select>
-                </label>
                 <br/><br/>
-                <button class="button" type="submit">Agregar</button>
+                <button class="button" type="submit">Modificar</button>
                 <button class="button" type="reset">Limpiar</button>                
             </form>
         </main>

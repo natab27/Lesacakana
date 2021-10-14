@@ -18,8 +18,21 @@ body{
     font-size: medium;
     color: white;
     background-color: rgb(76, 96, 115);
-
+    border-radius: 5px;
 }
 .input{
     font-size: medium;
+    padding: 5px;
+    border-radius: 5px;
+}
+.contenedorFormulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorIngresarDato{
+    margin: 0.5rem;
+    border: 0.5rem;
+    padding: 0.5rem;
+    justify-content: space-between;
 }

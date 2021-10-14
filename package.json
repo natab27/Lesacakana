@@ -1,0 +1,27 @@
+{
+  "name": "Lesacakana",
+  "version": "1.0.0",
+  "description": "Natalia Barrera, edad 27 años",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natab27/Lesacakana.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natab27/Lesacakana/issues"
+  },
+  "homepage": "https://github.com/natab27/Lesacakana#readme"
+}
